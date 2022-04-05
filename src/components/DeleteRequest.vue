@@ -1,9 +1,6 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>
-      Returns 200 if request was received, else returns 500.<br>
-    </p>
     <form form @submit.prevent="sendRequest">
     <div class="delete">
     <br/>

@@ -1,7 +1,9 @@
 <template>
   <nav>
-    <router-link to="/">POST</router-link> |
-    <router-link to="/about">DELETE</router-link>
+    <router-link to="/">SEND</router-link> |
+    <router-link to="/delete">DELETE</router-link> |
+    <router-link to="/getId">GET</router-link> |
+    <router-link to="/search">SEARCH</router-link>
   </nav>
   <router-view/>
 </template>
