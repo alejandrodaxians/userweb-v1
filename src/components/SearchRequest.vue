@@ -2,7 +2,7 @@
   <div class="search">
     <h1>{{ msg }}</h1>
     <form form @submit.prevent="sendRequest">
-    <div class="delete">
+    <div class="search">
     <br/>
     <h2>Parameters</h2>
         <h3>complete</h3>
