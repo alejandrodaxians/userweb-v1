@@ -40,3 +40,7 @@ input, select {
 .reset {
     background-color: #0d7673;
 }
+
+html {
+    background-color: rgb(240, 233, 240);
+}
