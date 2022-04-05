@@ -1,0 +1,42 @@
+h3 {
+    margin: 40px 0 0;
+  }
+
+img {
+    width: 300px;
+  }
+
+.column {
+    float: left;
+    width: 50%;
+    margin-bottom: 25px;
+    }
+
+.column2 {
+    float: left;
+    width: 50%;
+    }
+
+button {
+    margin: 20px; 
+    background-color: #290d76;  
+    color: white; 
+    font-size: 20px;
+    border-radius: 10px; 
+    cursor: pointer;
+    padding: 10px;
+    }   
+
+input, select {
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    }
+
+.erase {
+    background-color: #781d13;
+    }
+
+.reset {
+    background-color: #0d7673;
+}
