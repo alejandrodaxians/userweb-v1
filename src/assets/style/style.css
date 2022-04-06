@@ -27,6 +27,10 @@ button {
     padding: 10px;
     }   
 
+.bottom {
+    margin-bottom: 30%;
+}
+
 input, select {
     margin: 10px;
     padding: 5px;
@@ -45,7 +49,7 @@ nav {
     background-color: rgb(242, 245, 210);
 }
 
-.home, .column {
+.home, .column, .column2 {
     background-color: rgb(223, 246, 218);
 }
 
@@ -62,11 +66,18 @@ nav {
 }
 
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: Sen, Helvetica, Arial, sans-serif;
     text-align: center;
     color: #1b2631;
   }
 
-  nav {
+nav {
     padding: 30px;
   }
+
+h2 {
+    border: solid #0d7673 5px;
+    border-radius: 15px;
+    display: inline;
+    padding: 15px;
+}

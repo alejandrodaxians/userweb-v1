@@ -1,10 +1,12 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <form class="hello" form @submit.prevent="sendRequest">
+    <form class="what" form @submit.prevent="sendRequest">
     <div class="column">
     <br/>
+      <div class="border">
       <h2>PARAMETERS</h2>
+      </div>
         <h3>template_id</h3>
           <input type="number" v-model="template_id" required/>
         <h3>license_pack_id</h3>
@@ -19,17 +21,19 @@
           <input type="text" v-model="vnf_desc" required/>
       </div>
         <br/>
+      <div class="column2">
       <h2>ESSENTIAL LINKS</h2>
         <h3>raw_json</h3>
-          <input type="file">
+          <input type="file" required>
         <h3>tosca_file</h3>
-          <input type="file">
+          <input type="file" required>
         <h3>params_file</h3>
-          <input type="file">
+          <input type="file" required>
       <br/>
       <button class="reset" type="reset">Reset</button>
       <br/>
-      <button type="submit">Execute</button>
+      <button class="bottom" type="submit">Execute</button>
+      </div>
       </form>
   </div>
 </template>

@@ -9,7 +9,7 @@
 </template>
 
 <style lang="scss">
-@import '../src/assets/style/styles.css';
+@import '../src/assets/style/style.css';
 
 a {
     font-weight: bold;
@@ -19,5 +19,7 @@ a {
       color: #1126ad;
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
 
 </style>
