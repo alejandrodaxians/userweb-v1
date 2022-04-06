@@ -4,14 +4,14 @@
     <form form @submit.prevent="sendRequest">
     <div class="search">
     <br/>
-    <h2>Parameters</h2>
+    <h2>PARAMETERS</h2>
         <h3>complete</h3>
-            <select class="complete" name="complete" v-model="complete">
+            <select class="complete" name="complete" v-model="complete" required>
                 <option value="true">True</option>
                 <option value="false">False</option>
             </select>
-        <h3>complete</h3>
-            <select class="status" name="status" v-model="status">
+        <h3>status</h3>
+            <select class="status" name="status" v-model="status" required>
                 <option value="acknowledged">ACKNOWLEDGED</option>
                 <option value="progress">IN-PROGRESS</option>
                 <option value="pending">PENDING</option>
@@ -23,14 +23,14 @@
                 <option value="rejected">REJECTED</option>
             </select>
         <h3>saga_name</h3>
-            <select class="saga" name="saga" v-model="saga">
+            <select class="saga" name="saga" v-model="saga" required>
                 <option value="crear_sede">crear_sede</option>
                 <option value="crear_sede">borrar_sede</option>
             </select>
         <h3>from_date</h3>
-        <input type="date" v-model="from"/>
+        <input type="date" v-model="from" required/>
         <h3>to_date</h3>
-        <input type="date" v-model="to"/>
+        <input type="date" v-model="to" required/>
     </div>
       <button class="reset" type="reset">Reset</button>
       <br/>

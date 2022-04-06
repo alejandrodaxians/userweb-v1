@@ -44,3 +44,13 @@ input, select {
 html {
     background-color: rgb(240, 233, 240);
 }
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #1b2631;
+  }
+
+  nav {
+    padding: 30px;
+  }

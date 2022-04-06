@@ -4,17 +4,17 @@
     <form form @submit.prevent="sendRequest">
     <div class="delete">
     <br/>
-      <h2>Parameters</h2>
+      <h2>PARAMETERS</h2>
         <h3>vnf_id</h3>
-          <input type="text" v-model="vnf_id"/>
+          <input type="number" v-model="vnf_id" required/>
         <h3>vnfd_id</h3>
-          <input type="text" v-model="vnfd_id"/>
+          <input type="number" v-model="vnfd_id" required/>
         <h3>ucpe_id</h3>
-          <input type="text" v-model="ucpe_id"/>
+          <input type="number" v-model="ucpe_id" required/>
         </div>
       <button class="reset" type="reset">Reset</button>
       <br/>
-      <button class="erase" type="submit">Execute delete</button>
+      <button class="erase" type="submit">Delete</button>
       </form>
   </div>
 </template>

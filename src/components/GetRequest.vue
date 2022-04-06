@@ -4,9 +4,9 @@
     <form form @submit.prevent="sendRequest">
        <div class="delete">
     <br/>
-      <h2>Parameters</h2>
+      <h2>PARAMETERS</h2>
         <h3>request_id</h3>
-          <input type="text" v-model="request_id"/>
+          <input type="number" v-model="request_id" required/>
         </div>
       <button class="reset" type="reset">Reset</button>
       <br/>
