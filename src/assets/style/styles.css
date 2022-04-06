@@ -41,8 +41,24 @@ input, select {
     background-color: #0d7673;
 }
 
-html {
-    background-color: rgb(240, 233, 240);
+nav {
+    background-color: rgb(242, 245, 210);
+}
+
+.home, .column {
+    background-color: rgb(223, 246, 218);
+}
+
+.delete {
+    background-color: #fdd7ba;
+}
+
+.getOne {
+    background-color: #dff8ff;
+}
+
+.search {
+    background-color: #f8dfff;
 }
 
 #app {
