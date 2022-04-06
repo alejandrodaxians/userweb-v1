@@ -2,7 +2,7 @@
   <div class="getOne">
     <h1>{{ msg }}</h1>
     <form form @submit.prevent="sendRequest">
-       <div class="delete">
+       <div class="get">
     <br/>
       <h2>PARAMETERS</h2>
         <h3>request_id</h3>

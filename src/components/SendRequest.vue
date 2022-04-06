@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <form form @submit.prevent="sendRequest">
+    <form class="hello" form @submit.prevent="sendRequest">
     <div class="column">
     <br/>
       <h2>PARAMETERS</h2>
@@ -18,7 +18,6 @@
         <h3>vnf_desc</h3>
           <input type="text" v-model="vnf_desc" required/>
       </div>
-      <div class="colum2">
         <br/>
       <h2>ESSENTIAL LINKS</h2>
         <h3>raw_json</h3>
@@ -28,7 +27,6 @@
         <h3>params_file</h3>
           <input type="file">
       <br/>
-      </div>
       <button class="reset" type="reset">Reset</button>
       <br/>
       <button type="submit">Execute</button>

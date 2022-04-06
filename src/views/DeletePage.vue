@@ -1,7 +1,7 @@
 <template>
   <div class="delete">
     <img alt="Vue logo" src="../assets/logo.png">
-    <DeleteRequest msg="Delete a VNF, VNFD, and UCPe"/>
+    <DeleteRequest msg="Delete a VNF, VNFD, and UCPe."/>
   </div>
 </template>
 
