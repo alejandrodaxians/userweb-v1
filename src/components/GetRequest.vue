@@ -1,21 +1,27 @@
 <template>
   <div class="getOne">
     <h1>{{ msg }}</h1>
-    <form form @submit.prevent="sendRequest">
+    <form form @submit.prevent="onSubmit">
        <div class="get">
     <br/>
       <h2>PARAMETERS</h2>
         <h3>request_id</h3>
-          <input type="number" v-model="request_id" required/>
+          <input type="number" v-model="getData.request_id" placeholder="3333" required/>
+        <h3>complete</h3>
+            <select class="complete" name="complete" v-model="getData.complete" required>
+                <option value="true">True</option>
+                <option value="false">False</option>
+            </select>
         </div>
       <button class="reset" type="reset">Reset</button>
       <br/>
-      <button class="erase" type="submit">Search</button>
+      <button @click="getPost" class="erase" type="submit">Search</button>
     </form>
-  </div>
+    </div>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: 'GetOne',
   props: {
@@ -23,7 +29,22 @@ export default {
   },
   data () {
     return {
-      request_id: 3333
+      getData: {
+        request_id: '',
+        complete: ''
+      }
+    }
+  },
+  methods: {
+    getRequest () {
+      axios.get('')
+        .then((response) => {
+          console.log(response.data)
+          // cuerpo
+        })
+        .catch((error) => {
+          console.log(error)
+        })
     }
   }
 }

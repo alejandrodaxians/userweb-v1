@@ -6,7 +6,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import GetOne from '@/components/GetRequest.vue'
 
 export default {

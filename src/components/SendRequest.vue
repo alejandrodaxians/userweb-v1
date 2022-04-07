@@ -1,22 +1,22 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <form class="what" form @submit.prevent="sendRequest">
+    <form class="what" @submit="prevent.onSubmit">
     <div class="column">
     <br/>
       <h2>PARAMETERS</h2>
       <h3>template_id</h3>
-          <input type="number" v-model="template_id" required/>
+          <input type="number" v-model="sendData.template_id" placeholder="3333" required/>
         <h3>license_pack_id</h3>
-          <input type="number" v-model="license_pack_id" required/>
+          <input type="number" v-model="sendData.license_pack_id" placeholder="270" required/>
         <h3>vnfd_name</h3>
-          <input type="text" v-model="vnfd_name" required/>
+          <input type="text" v-model="sendData.vnfd_name" placeholder="VNFD_testname" required/>
         <h3>vnfd_desc</h3>
-          <input type="text" v-model="vnfd_desc" required/>
+          <input type="text" v-model="sendData.vnfd_desc" placeholder="VNFD_test_desc" required/>
         <h3>vnf_name</h3>
-          <input type="text" v-model="vnf_name" required/>
+          <input type="text" v-model="sendData.vnf_name" placeholder="VNF_testname" required/>
         <h3>vnf_desc</h3>
-          <input class="last" type="text" v-model="vnf_desc" required/>
+          <input class="last" type="text" v-model="sendData.vnf_desc" placeholder="VNF_test_desc" required/>
       </div>
         <br/>
       <div class="column2">
@@ -30,29 +30,39 @@
       <br/>
       <button class="reset" type="reset">Reset</button>
       <br/>
-      <button class="bottom" type="submit">Execute</button>
+      <button @click="sendRequest" class="bottom" type="submit">Execute</button>
       </div>
       </form>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-  name: 'HelloWorld',
+  name: 'HomePage',
   props: {
     msg: String
   },
   data () {
     return {
-      template_id: 3333,
-      license_pack_id: 270,
-      vnfd_name: 'VNFD_testname',
-      vnfd_desc: 'VNFD_test_desc',
-      vnf_name: 'VNF_testname',
-      vnf_desc: 'VNF_test_desc',
-      raw_json: '',
-      tosca_file: '',
-      params_file: ''
+      sendData: {
+        template_id: '',
+        license_pack_id: '',
+        vnfd_name: '',
+        vnfd_desc: '',
+        vnf_name: '',
+        vnf_desc: '',
+        raw_json: '',
+        tosca_file: '',
+        params_file: ''
+      }
+    }
+  },
+  methods: {
+    sendRequest () {
+      axios.post('', this.sendData)
+        .then(response => console.log(response))
+        .catch(error => console.log(error))
     }
   }
 }
