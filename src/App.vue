@@ -1,10 +1,11 @@
 <template>
   <nav>
-    <router-link class="header" id= "send" to="/">SEND</router-link>
+    <router-link class="header" id= "search" to="/">SEARCH</router-link>
+    <router-link class="header" id= "send" to="/create">CREATE</router-link>
     <router-link class="header" id= "delete" to="/delete">DELETE</router-link>
     <router-link class="header" id= "get" to="/getId">GET</router-link>
-    <router-link class="header" id= "search" to="/search">SEARCH</router-link>
-  </nav>
+    <img  alt="Vue logo" src="./assets/logo.png">
+      </nav>
   <router-view/>
 </template>
 

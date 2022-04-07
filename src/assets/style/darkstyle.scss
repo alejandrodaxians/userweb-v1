@@ -8,33 +8,31 @@
     --rounded: 15px;
     --active: solid #ffffff 3px;
     --window: 100vh;
+    --izquierda: 15px;
 }
 
 //titulos y header
-h1 {
-    padding-bottom: 35px;
+h3, h4, p {
+    margin-left: var(--izquierda);
 }
 
-h2 {
-    border: solid #67a4a1 5px;
-    border-radius: var(--rounded);
-    display: inline;
-    padding: 15px;
+h4 {
+    text-decoration: underline;
+    display: block;
+    padding-bottom: 15px;
+    color: #def7ff;
 }
-
-h3 {
-    margin: 40px 0 0;
-    font-size:x-large;
-  }
 
 img {
-    width: 250px;
-    margin-top: 10px;
+    width: 80px;
+    margin-left: 90vw;
   }
 
 nav {
     background-color: #24241f;
-    padding: 30px;
+    padding-top: 20px;
+    text-align: left;
+    font-size: small;
 }
 
 a {
@@ -44,7 +42,7 @@ a {
 
 #app {
     font-family: Helvetica, Arial, sans-serif;
-    text-align: center;
+    text-align: left;
     color: var(--font);
 }
 
@@ -117,10 +115,8 @@ a {
 
 //interaccion
 input, select {
-    margin: 10px;
-    padding: 5px;
-    font-size: 20px;
-    }
+    margin-left: var(--izquierda);
+}
 
 .erase {
     background-color: #f5e1df;
@@ -131,19 +127,20 @@ input, select {
 }
 
 button {
-        margin: 20px; 
-        background-color: #eeecf4;  
-        color: #000000; 
-        font-size: 25px;
-        border-radius: 10px; 
-        cursor: pointer;
-        padding: 10px;
-        font-weight: bold;
+    margin: 20px;
+    padding: 15px;
+    background-color: #eeecf4;  
+    color: #000000; 
+    font-size: 15px;
+    border-radius: 10px; 
+    cursor: pointer;
+    font-weight: bold;
     }
         button:hover {
             border: var(--active);
         }   
-
-input {
-    padding: 10px;
+input[type=radio] {
+    transform: scale(1.5);
 }
+
+

@@ -6,11 +6,11 @@ import SearchAll from '../views/SearchAll.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/create',
     name: 'post',
     component: HomeView,
     meta: {
-      title: 'SEND',
+      title: 'CREATE',
       metaTags: [
         {
           name: 'description',
@@ -60,7 +60,7 @@ const routes = [
     }
   },
   {
-    path: '/search',
+    path: '/',
     name: 'searchAll',
     component: SearchAll,
     meta: {

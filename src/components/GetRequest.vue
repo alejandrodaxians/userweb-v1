@@ -1,18 +1,18 @@
 <template>
   <div class="getOne">
-    <h1>{{ msg }}</h1>
+    <h3>{{ msg }}</h3>
     <form form @submit.prevent="onSubmit">
        <div class="get">
     <br/>
-      <h2>PARAMETERS</h2>
-        <h3>request_id</h3>
+      <h4>PARAMETERS</h4>
+        <p>request_id</p>
           <input type="number" v-model="getData.request_id" placeholder="3333" required/>
-        <h3>complete</h3>
-            <select class="complete" name="complete" v-model="getData.complete" required>
-                <option value="true">True</option>
-                <option value="false">False</option>
-            </select>
-        </div>
+        <p>complete</p>
+            <input type="radio" id="true" value="true" name="complete" v-model="getData.complete">
+            <label for="true"> True</label>
+            <input type="radio" id="false" value="false" name="complete" v-model="getData.complete">
+            <label for="true"> False</label>
+          </div>
       <button class="reset" type="reset">Reset</button>
       <br/>
       <button @click="getPost" class="erase" type="submit">Search</button>
@@ -31,7 +31,7 @@ export default {
     return {
       getData: {
         request_id: '',
-        complete: ''
+        complete: [true, false]
       }
     }
   },

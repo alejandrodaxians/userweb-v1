@@ -1,6 +1,6 @@
 <template>
   <div class="getOne">
-    <img alt="Cemex" src="../assets/logo.png">
+    <br>
     <GetOne msg="Sends a request to RequestHandler to get request data."/>
   </div>
 </template>

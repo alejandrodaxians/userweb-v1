@@ -1,6 +1,6 @@
 <template>
   <div class="search">
-    <img alt="Cemex" src="../assets/logo.png">
+    <br>
     <SearchAll msg="Returns a list of requests filtered by the given parameters."/>
   </div>
 </template>

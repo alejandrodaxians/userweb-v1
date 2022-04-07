@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Cemex" src="../assets/logo.png">
+    <br>
     <SendQuest msg="Sends a request to RequestHandler to deploy a VNF, VNFD, and UCPe."/>
   </div>
 </template>
