@@ -19,7 +19,7 @@
           <input class="last" type="text" v-model="vnf_desc" required/>
       </div>
         <br/>
-      <!-- <div class="column2"> -->
+      <div class="column2">
       <h2>ESSENTIAL LINKS</h2>
         <h3>raw_json</h3>
           <input type="file" required>
@@ -31,7 +31,7 @@
       <button class="reset" type="reset">Reset</button>
       <br/>
       <button class="bottom" type="submit">Execute</button>
-      <!-- </div> -->
+      </div>
       </form>
   </div>
 </template>

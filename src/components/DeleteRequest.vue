@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="delete_2">
     <h1>{{ msg }}</h1>
     <form form @submit.prevent="sendRequest">
     <div class="delete">
@@ -11,10 +11,11 @@
           <input type="number" v-model="vnfd_id" required/>
         <h3>ucpe_id</h3>
           <input type="number" v-model="ucpe_id" required/>
-        </div>
+      <br/>
       <button class="reset" type="reset">Reset</button>
       <br/>
       <button class="erase" type="submit">Delete</button>
+        </div>
       </form>
   </div>
 </template>

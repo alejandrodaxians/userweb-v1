@@ -1,10 +1,10 @@
 //variables
 :root {
-    --send: #dcfbd5;
-    --delete: #fdd7ba;
-    --get: #dff8ff;
-    --search: #f8dfff;
-    --font: #1b2631;
+    --send: #272d26;
+    --delete: #393029;
+    --get: #252b2c;
+    --search: #201c21;
+    --font: #ffffff;
     --rounded: 15px;
     --active: solid #ffffff 3px;
     --window: 100vh;
@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-    border: solid #0d7673 5px;
+    border: solid #67a4a1 5px;
     border-radius: var(--rounded);
     display: inline;
     padding: 15px;
@@ -28,25 +28,25 @@ h3 {
   }
 
 img {
-    width: 300px;
+    width: 250px;
     margin-top: 10px;
   }
 
 nav {
-    background-color: #f5f8d8;
+    background-color: #24241f;
     padding: 30px;
 }
 
 a {
-    font-weight: bold;
+    // font-weight: bold;
     color: var(--font);
 }
 
 #app {
-    font-family: Sen, Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     text-align: center;
     color: var(--font);
-  }
+}
 
 .header {
     padding: 15px;
@@ -96,13 +96,15 @@ a {
     background-color: var(--send);
 }
 
-.delete {
+.delete, .delete_2 {
     background-color: var(--delete);
+    height: var(--window);    
 }
 
 .getOne {
     background-color: var(--get);
     height: var(--window);
+    width: var(--wall);
 }
 
 .search {
@@ -114,20 +116,6 @@ a {
 }
 
 //interaccion
-
-button {
-    margin: 20px; 
-    background-color: #290d76;  
-    color: #ffffff; 
-    font-size: 20px;
-    border-radius: 10px; 
-    cursor: pointer;
-    padding: 10px;
-    }  
-    button:hover {
-        border: var(--active);
-    }  
-
 input, select {
     margin: 10px;
     padding: 5px;
@@ -135,12 +123,26 @@ input, select {
     }
 
 .erase {
-    background-color: #781d13;
-    }
+    background-color: #f5e1df;
+}
 
 .reset {
-    background-color: #0d7673;
+    background-color: #ebfbfa;
 }
+
+button {
+        margin: 20px; 
+        background-color: #eeecf4;  
+        color: #000000; 
+        font-size: 25px;
+        border-radius: 10px; 
+        cursor: pointer;
+        padding: 10px;
+        font-weight: bold;
+    }
+        button:hover {
+            border: var(--active);
+        }   
 
 input {
     padding: 10px;

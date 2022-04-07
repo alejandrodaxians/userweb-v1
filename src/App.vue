@@ -9,7 +9,7 @@
 </template>
 
 <style lang="scss">
-@import '../src/assets/style/style.scss';
+@import '../src/assets/style/darkstyle.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
 
