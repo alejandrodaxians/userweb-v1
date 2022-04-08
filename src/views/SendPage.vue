@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <br>
-    <SendQuest msg="Sends a request to RequestHandler to deploy a VNF, VNFD, and UCPe."/>
+    <SendQuest msg="SENDS A REQUEST TO REQUESTHANDLER TO DEPLOY A VNF, VNFD, AND UCPE"/>
   </div>
 </template>
 

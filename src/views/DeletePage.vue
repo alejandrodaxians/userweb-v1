@@ -1,7 +1,7 @@
 <template>
   <div class="delete">
     <br>
-    <DeleteRequest class="title" msg="Delete a VNF, VNFD, and UCPe."/>
+    <DeleteRequest class="title" msg="DELETE A VNF, VNFD, AND UCPE"/>
     </div>
 </template>
 

@@ -8,41 +8,48 @@
     --rounded: 15px;
     --active: solid #ffffff 3px;
     --window: 100vh;
-    --izquierda: 15px;
+    --size: 15px;
+}
+
+:root {
+    font-weight: bold;
 }
 
 //titulos y header
 h3, h4, p {
-    margin-left: var(--izquierda);
+    margin-left: var(--size);
 }
 
-h4 {
-    text-decoration: underline;
-    display: block;
+label {
+    margin: var(--size);
+}
+
+.title {
     padding-bottom: 15px;
-    color: #def7ff;
 }
 
-img {
-    width: 80px;
-    margin-left: 90vw;
-  }
+.essential {
+    margin-left: 235px;
+}
+// img {
+//     width: 80px;
+//     margin-left: 90vw;
+//   }
 
 nav {
     background-color: #24241f;
-    padding-top: 20px;
+    padding-top: 15px;
     text-align: left;
     font-size: small;
 }
 
 a {
-    // font-weight: bold;
+    font-weight: bold;
     color: var(--font);
 }
 
 #app {
     font-family: Helvetica, Arial, sans-serif;
-    text-align: left;
     color: var(--font);
 }
 
@@ -61,6 +68,7 @@ a {
 
 #delete {
     &.router-link-exact-active {
+        padding: 10px;
         background-color: var(--delete);
         border-radius: var(--rounded);
         border: var(--active);
@@ -69,6 +77,7 @@ a {
 
 #get {
     &.router-link-exact-active {
+        padding: 10px;
         background-color: var(--get);
         border-radius: var(--rounded);
         border: var(--active);
@@ -86,27 +95,29 @@ a {
 //main y divs
 .column {
     float: left;
-    width: 50%;
-    margin-bottom: 25px;
-    }
-
-.home, .column, .column2 {
     background-color: var(--send);
+    margin-right: 30px;
+    margin-top: -20px;
 }
 
-.delete, .delete_2 {
+.home {
+    background-color: var(--send);
+    height: 95vh;
+}
+
+.delete {
     background-color: var(--delete);
-    height: var(--window);    
+    height: 85vh;  
 }
 
 .getOne {
     background-color: var(--get);
-    height: var(--window);
-    width: var(--wall);
+    height: 91vh;
 }
 
 .search {
     background-color: var(--search);
+    height: 95vh;
 }
 
 .bottom {
@@ -115,7 +126,7 @@ a {
 
 //interaccion
 input, select {
-    margin-left: var(--izquierda);
+    margin-left: var(--size);
 }
 
 .erase {
@@ -123,12 +134,13 @@ input, select {
 }
 
 .reset {
-    background-color: #ebfbfa;
+   background-color: #ebfbfa;
+   margin-top: 30px;
 }
 
 button {
-    margin: 20px;
-    padding: 15px;
+    margin: 15px;
+    padding: 10px;
     background-color: #eeecf4;  
     color: #000000; 
     font-size: 15px;
@@ -139,8 +151,15 @@ button {
         button:hover {
             border: var(--active);
         }   
+
 input[type=radio] {
     transform: scale(1.5);
+    position: relative;
+    left: 10px;
+}
+
+input[type=number], input[type=text], input[type=file], input[type=date] {
+   margin-bottom: 20px;
 }
 
 

@@ -1,7 +1,7 @@
 <template>
   <div class="search">
     <br>
-    <SearchAll msg="Returns a list of requests filtered by the given parameters."/>
+    <SearchAll msg="RETURNS A LIST OF REQUESTS FILTERED BY THE GIVEN PARAMETERS"/>
   </div>
 </template>
 

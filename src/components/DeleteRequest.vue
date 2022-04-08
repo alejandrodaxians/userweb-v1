@@ -1,23 +1,25 @@
 <template>
-  <div class="delete_2">
-    <h1>{{ msg }}</h1>
+    <h4 class="title">{{ msg }}</h4>
     <form form @submit.prevent="onSubmit">
     <div class="delete">
-    <br/>
-      <h2>PARAMETERS</h2>
-        <h3>vnf_id</h3>
-          <input type="number" v-model="deleteData.vnf_id" placeholder="4335" required/>
-        <h3>vnfd_id</h3>
-          <input type="number" v-model="deleteData.vnfd_id" placeholder="4333" required/>
-        <h3>ucpe_id</h3>
-          <input type="number" v-model="deleteData.ucpe_id" placeholder="4332" required/>
+      <h4>Parameters:</h4>
+          <label for="vnf">vnf_id</label>
+          <br>
+          <input id="vnf" type="number" v-model="deleteData.vnf_id" placeholder="4335" required/>
+          <br>
+          <label for="vnf">vnf_id</label>
+          <br>
+          <input id="vnfd" type="number" v-model="deleteData.vnfd_id" placeholder="4333" required/>
+          <br>
+          <label for="ucpe">ucpe_id</label>
+          <br>
+          <input id="ucpe" type="number" v-model="deleteData.ucpe_id" placeholder="4332" required/>
       <br/>
       <button class="reset" type="reset">Reset</button>
       <br/>
       <button class="erase" type="submit">Delete</button>
         </div>
       </form>
-  </div>
 </template>
 
 <script>
