@@ -28,14 +28,6 @@ label {
     padding-bottom: 15px;
 }
 
-.essential {
-    margin-left: 235px;
-}
-// img {
-//     width: 80px;
-//     margin-left: 90vw;
-//   }
-
 nav {
     background-color: #24241f;
     padding-top: 15px;
@@ -93,16 +85,41 @@ a {
 }
 
 //main y divs
-.column {
-    float: left;
+.container, .home {
+    display: grid;
     background-color: var(--send);
-    margin-right: 30px;
+    height: 85vh;
+}
+
+.column, .column2, .column3  {
+    float: left;
+}
+
+.column {
     margin-top: -20px;
 }
 
-.home {
-    background-color: var(--send);
-    height: 95vh;
+.column2 {
+    margin-top: 40px;
+}
+
+.column3 {
+    margin-top: -20px;
+    margin-left: 15px;
+}
+
+.column4 {
+    margin-top: 40px;
+    margin-left: 715px;
+}
+
+.column5 {
+    margin-top: 15px;
+}
+
+.column6 {
+    margin-left: 485px;
+    margin-top: -140px;
 }
 
 .delete {
@@ -112,16 +129,22 @@ a {
 
 .getOne {
     background-color: var(--get);
-    height: 91vh;
+    height: 85vh;
 }
 
 .search {
+    display: grid;
     background-color: var(--search);
-    height: 95vh;
+    height: 85vh;
 }
 
 .bottom {
     margin-bottom: 250px;
+}
+
+.columnButtons {
+    margin-left: 215px;
+    margin-top: 40px;
 }
 
 //interaccion
@@ -129,16 +152,7 @@ input, select {
     margin-left: var(--size);
 }
 
-.erase {
-    background-color: #f5e1df;
-}
-
-.reset {
-   background-color: #ebfbfa;
-   margin-top: 30px;
-}
-
-button {
+.button, .reset {
     margin: 15px;
     padding: 10px;
     background-color: #eeecf4;  
@@ -150,7 +164,7 @@ button {
     }
         button:hover {
             border: var(--active);
-        }   
+        } 
 
 input[type=radio] {
     transform: scale(1.5);
@@ -161,5 +175,3 @@ input[type=radio] {
 input[type=number], input[type=text], input[type=file], input[type=date] {
    margin-bottom: 20px;
 }
-
-

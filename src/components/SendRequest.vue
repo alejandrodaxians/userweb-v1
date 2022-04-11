@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
   <h4 class="title">{{ msg }}</h4>
+  <div class="container">
   <form @submit="prevent.sendRequest">
     <div class="column">
       <h4>Parameters:</h4>
@@ -16,6 +16,8 @@
       <br>
       <input id="name" type="text" v-model="sendData.vnfd_name" placeholder="VNFD_testname" required/>
       <br>
+    </div>
+    <div class="column2">
       <label for="desc">vnfd_desc</label>
       <br>
       <input id="desc" type="text" v-model="sendData.vnfd_desc" placeholder="VNFD_test_desc" required/>
@@ -28,7 +30,7 @@
       <br>
       <input id="vnf_desc" class="last" type="text" v-model="sendData.vnf_desc" placeholder="VNF_test_desc" required/>
     </div>
-    <div class="column2">
+    <div class="column3">
       <h4 class="essential">Essential links:</h4>
       <label for="raw">raw_json</label>
       <br>
@@ -41,10 +43,13 @@
       <label for="params">params_file</label>
       <br>
       <input id= "params" type="file" required>
+    </div>
+    <div class="column4">
       <br/>
-      <button class="reset" type="reset">Reset</button>
+      <br>
+      <button class="reset" type="reset">RESET</button>
       <br/>
-      <button @click="sendRequest" class="bottom" type="submit">Execute</button>
+      <button @click="sendRequest" class="button" type="submit">EXECUTE</button>
     </div>
    </form>
    </div>

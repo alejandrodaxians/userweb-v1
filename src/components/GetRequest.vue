@@ -1,23 +1,28 @@
 <template>
+<h4 class="title">{{ msg }}</h4>
   <div class="getOne">
-    <h4 class="title">{{ msg }}</h4>
     <form form @submit.prevent="onSubmit">
-       <div class="get">
+    <div class="column">
       <h4>Parameters:</h4>
-        <label for="request">request_id</label>
-        <br>
-          <input id="request" type="number" v-model="getData.request_id" placeholder="3333" required/>
-        <p class="complete">complete</p>
-            <input type="radio" id="true" value="true" name="complete" v-model="getData.complete">
-            <label for="true"> True</label>
-            <input type="radio" id="false" value="false" name="complete" v-model="getData.complete">
-            <label for="true"> False</label>
-          </div>
-      <button class="reset" type="reset">Reset</button>
+      <label for="request">request_id</label>
       <br>
-      <button @click="getPost" class="erase" type="submit">Search</button>
-    </form>
+      <input id="request" type="number" v-model="getData.request_id" placeholder="3333" required/>
+      <p class="complete">complete</p>
+      <input type="radio" id="true" value="true" name="complete" v-model="getData.complete">
+      <label for="true"> True</label>
+      <input type="radio" id="false" value="false" name="complete" v-model="getData.complete">
+      <label for="true"> False</label>
     </div>
+    <br>
+    <br>
+    <br>
+    <div class="radioButtons">
+      <button class="reset" type="reset">RESET</button>
+      <br>
+      <button @click="getPost" class="button" type="submit">SEARCH</button>
+    </div>
+    </form>
+  </div>
 </template>
 
 <script>
