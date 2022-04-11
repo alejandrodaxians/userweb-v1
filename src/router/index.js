@@ -3,6 +3,7 @@ import HomeView from '../views/SendPage.vue'
 import Delete from '../views/DeletePage.vue'
 import GetId from '../views/GetId.vue'
 import SearchAll from '../views/SearchAll.vue'
+import IPConfig from '../views/IPConfig.vue'
 
 const routes = [
   {
@@ -73,6 +74,24 @@ const routes = [
         {
           property: 'og:description',
           content: 'Returns a list of requests filtered by the given parameters.'
+        }
+      ]
+    }
+  },
+  {
+    path: '/configure',
+    name: 'IPConfig',
+    component: IPConfig,
+    meta: {
+      title: 'CONFIGURE',
+      metaTags: [
+        {
+          name: 'description',
+          content: 'Placeholder for future configuration implementations'
+        },
+        {
+          property: 'og:description',
+          content: 'Placeholder for future configuration implementations'
         }
       ]
     }

@@ -4,8 +4,8 @@
     <router-link class="header" id= "send" to="/create">CREATE</router-link>
     <router-link class="header" id= "delete" to="/delete">DELETE</router-link>
     <router-link class="header" id= "get" to="/getId">GET</router-link>
-    <!-- <img  alt="Vue logo" src="./assets/logo.png"> -->
-      </nav>
+    <router-link class="header" id="config" to="/configure">CONFIGURE</router-link>
+  </nav>
   <router-view/>
 </template>
 

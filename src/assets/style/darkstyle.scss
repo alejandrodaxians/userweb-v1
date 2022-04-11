@@ -4,6 +4,7 @@
     --delete: #393029;
     --get: #252b2c;
     --search: #201c21;
+    --config: #292919;
     --font: #ffffff;
     --rounded: 15px;
     --active: solid #ffffff 3px;
@@ -84,6 +85,14 @@ a {
   }
 }
 
+#config {
+    &.router-link-exact-active {
+        background-color: var(--config);
+        border-radius: var(--rounded);
+        border: var(--active);
+  }
+}
+
 //main y divs
 .container, .home {
     display: grid;
@@ -145,6 +154,11 @@ a {
 .columnButtons {
     margin-left: 215px;
     margin-top: 40px;
+}
+
+.config {
+    background-color: var(--config);
+    height: 90vh;
 }
 
 //interaccion
