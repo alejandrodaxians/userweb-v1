@@ -44,7 +44,7 @@
       <br>
       <input id= "params" type="file" required>
     </div>
-    <div class="column4">
+    <div class="columnButtons">
       <br/>
       <br>
       <button class="reset" type="reset">RESET</button>
