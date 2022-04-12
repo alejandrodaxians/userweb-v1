@@ -1,7 +1,7 @@
 <template>
   <div class="getOne">
     <br>
-    <GetOne msg="SENDS A REQUEST TO REQUESTHANDLER TO GET REQUEST DATA"/>
+    <GetOne msg="GET: SENDS A REQUEST TO REQUESTHANDLER TO GET REQUEST DATA"/>
   </div>
 </template>
 
