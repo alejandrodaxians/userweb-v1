@@ -4,7 +4,7 @@
       <router-link class="dropbtn" id= "search" to="/">SEARCH</router-link>
       <div class="dropdown-content">
         <router-link id= "get" to="/getId">GET</router-link>
-        <router-link id= "get" to="/getId">...</router-link>
+        <router-link id= "get" to="">...</router-link>
       </div>
     </div>
     <router-link class="header" id= "send" to="/create">CREATE</router-link>

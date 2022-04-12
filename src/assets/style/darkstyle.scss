@@ -95,7 +95,7 @@ a {
 
 //main y divs
 .container, .home {
-    display: grid;
+    display: block;
     background-color: var(--send);
     height: 85vh;
 }
@@ -127,8 +127,8 @@ a {
 }
 
 .column6 {
-    margin-left: 485px;
-    margin-top: -140px;
+    margin-left: 185px;
+    margin-top: 165px;
 }
 
 .delete {
@@ -239,5 +239,7 @@ input[type=number], input[type=text], input[type=file], input[type=date] {
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #09690c;
-}
+  .dropdown:hover .dropbtn {
+      background-color: #ffffff;
+      color: #000;
+    }

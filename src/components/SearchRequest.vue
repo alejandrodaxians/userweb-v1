@@ -4,18 +4,18 @@
   <form form @submit.prevent="onSearchdata">
     <div class="column">
       <h4>Parameters:</h4>
-      <p class="complete">complete</p>
-      <input type="radio" id="true2" value="true2" name="complete" v-model="searchData.complete" required>
-      <label for="true2">True</label>
-      <input type="radio" id="false2" value="false2" name="complete" v-model="searchData.complete" required>
-      <label for="false2">False</label>
-      <p>saga_name</p>
-      <input type="radio" name="crear" id="crear" v-model="searchData.saga" required>
-      <label for="crear">crear_sede</label>
-      <input type="radio" name="borrar" id="borrar" v-model="searchData.saga" required>
-      <label for="borrar">borrar_sede</label>
-    </div>
-    <div class="column5">
+      <input type="radio" id="complete" value="complete" name="complete" v-model="searchData.complete" required>
+      <label for="complete">complete</label>
+      <br>
+      <br>
+      <label for="sede">saga_name</label>
+      <br>
+      <select name="sede" id="sede" required>
+        <option value="crear">crear_sede</option>
+        <option value="borrar">borrar_sede</option>
+      </select>
+      <br>
+      <br>
       <label for="status">status</label>
       <br>
       <select id="status" name="status" v-model="searchData.status" required>
