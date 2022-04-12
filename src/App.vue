@@ -1,7 +1,12 @@
 <template>
   <nav>
-    <router-link class="header" id= "search" to="/">SEARCH</router-link>
-    <router-link class="header" id= "get" to="/getId">GET</router-link>
+    <div class="dropdown">
+      <router-link class="dropbtn" id= "search" to="/">SEARCH</router-link>
+      <div class="dropdown-content">
+        <router-link id= "get" to="/getId">GET</router-link>
+        <router-link id= "get" to="/getId">...</router-link>
+      </div>
+    </div>
     <router-link class="header" id= "send" to="/create">CREATE</router-link>
     <router-link class="header" id= "delete" to="/delete">DELETE</router-link>
     <router-link class="header" id="config" to="/configure">CONFIGURE</router-link>
