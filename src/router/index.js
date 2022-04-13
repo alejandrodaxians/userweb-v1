@@ -47,7 +47,7 @@ const routes = [
     name: 'getOne',
     component: GetId,
     meta: {
-      title: 'GET',
+      title: 'SEARCH BY ID',
       metaTags: [
         {
           name: 'description',
@@ -65,7 +65,7 @@ const routes = [
     name: 'searchAll',
     component: SearchAll,
     meta: {
-      title: 'SEARCH',
+      title: 'SEARCH BY FILTERS',
       metaTags: [
         {
           name: 'description',

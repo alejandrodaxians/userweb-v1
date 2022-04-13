@@ -1,7 +1,7 @@
 <template>
 <div class="config">
     <br>
-    <ConfigureIp msg="LOREM IPSUM"/>
+    <ConfigureIp msg="TBD"/>
 </div>
 </template>
 

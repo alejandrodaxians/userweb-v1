@@ -1,10 +1,10 @@
 <template>
   <nav>
     <div class="dropdown">
-      <router-link class="dropbtn" id= "search" to="/">SEARCH</router-link>
+      <p class="dropbtn" id= "search" to="/none">SEARCH</p>
       <div class="dropdown-content">
-        <router-link id= "get" to="/getId">GET</router-link>
-        <router-link id= "get" to="">...</router-link>
+        <router-link id= "get" to="/">BY FILTERS</router-link>
+        <router-link id= "get" to="/getId">BY ID</router-link>
       </div>
     </div>
     <router-link class="header" id= "send" to="/create">CREATE</router-link>

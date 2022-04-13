@@ -8,8 +8,8 @@
     --font: #ffffff;
     --rounded: 15px;
     --active: solid #ffffff 3px;
-    --window: 100vh;
     --size: 15px;
+    --window: 80vh;
 }
 
 :root {
@@ -31,7 +31,7 @@ label {
 
 nav {
     background-color: #24241f;
-    padding-top: 15px;
+    // padding-top: 15px;
     text-align: left;
     font-size: small;
 }
@@ -97,7 +97,7 @@ a {
 .container, .home {
     display: block;
     background-color: var(--send);
-    height: 85vh;
+    height: var(--window);
 }
 
 .column, .column2, .column3  {
@@ -127,24 +127,24 @@ a {
 }
 
 .column6 {
-    margin-left: 185px;
+    margin-left: 170px;
     margin-top: 165px;
 }
 
 .delete {
     background-color: var(--delete);
-    height: 85vh;  
+    height: var(--window);  
 }
 
 .getOne {
     background-color: var(--get);
-    height: 85vh;
+    height: var(--window);
 }
 
 .search {
     display: grid;
     background-color: var(--search);
-    height: 85vh;
+    height: var(--window);
 }
 
 .bottom {
@@ -180,10 +180,10 @@ input, select {
             border: var(--active);
         } 
 
-input[type=radio] {
+input[type=checkbox] {
     transform: scale(1.5);
     position: relative;
-    left: 10px;
+    left: 5px;
 }
 
 input[type=number], input[type=text], input[type=file], input[type=date] {
@@ -233,13 +233,15 @@ input[type=number], input[type=text], input[type=file], input[type=date] {
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #6e6e6e;}
+  .dropdown-content a:hover {
+    background-color: #6e6e6e;
+    border: solid #622929 3px;
+}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {
-      background-color: #ffffff;
       color: #000;
     }
