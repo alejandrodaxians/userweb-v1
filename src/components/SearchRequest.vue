@@ -19,6 +19,7 @@
       <label for="status">status</label>
       <br>
       <select id="status" name="status" v-model="searchData.status" required>
+        <option value="" disabled selected hidden></option>
         <option value="acknowledged">ACKNOWLEDGED</option>
         <option value="progress">IN-PROGRESS</option>
         <option value="pending">PENDING</option>
