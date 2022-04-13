@@ -3,8 +3,8 @@
     <div class="dropdown">
       <p class="dropbtn" id= "search" to="/none">SEARCH</p>
       <div class="dropdown-content">
-        <router-link id= "get" to="/">BY FILTERS</router-link>
-        <router-link id= "get" to="/getId">BY ID</router-link>
+        <router-link id= "get" to="/">FILTERS</router-link>
+        <router-link id= "get" to="/getId">ID</router-link>
       </div>
     </div>
     <router-link class="header" id= "send" to="/create">CREATE</router-link>
