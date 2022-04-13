@@ -1,12 +1,11 @@
-//variables
+//VARIABLES
 :root {
     --send: #272d26;
-    --delete: #393029;
+    --delete: #251f1a;
     --get: #252b2c;
     --search: #201c21;
     --config: #292919;
-    --font: #ffffff;
-    --rounded: 15px;
+    --font: #fafafa;
     --active: solid #ffffff 3px;
     --size: 15px;
     --window: 80vh;
@@ -16,7 +15,7 @@
     font-weight: bold;
 }
 
-//titulos y header
+//TITLES & NAV
 h3, h4, p {
     margin-left: var(--size);
 }
@@ -30,14 +29,11 @@ label {
 }
 
 nav {
-    background-color: #24241f;
-    // padding-top: 15px;
-    text-align: left;
+    background-color: #000;
     font-size: small;
 }
 
 a {
-    font-weight: bold;
     color: var(--font);
 }
 
@@ -47,55 +43,44 @@ a {
 }
 
 .header {
-    padding: 15px;
+    padding: var(--size);
     font-size: larger;
+}
+
+#send, #delete, #search, #config {
+    &.router-link-exact-active {
+        border: var(--active);
+  }
 }
 
 #send {
     &.router-link-exact-active {
-        background-color: var(--send);
-        border-radius: var(--rounded);
-        border: var(--active);
-  }
+        background-color: var(--send); 
+        margin-right: var(--size);
+    }
 }
 
 #delete {
     &.router-link-exact-active {
-        padding: 10px;
         background-color: var(--delete);
-        border-radius: var(--rounded);
-        border: var(--active);
-  }
-}
-
-#get {
-    &.router-link-exact-active {
-        padding: 10px;
-        background-color: var(--get);
-        border-radius: var(--rounded);
-        border: var(--active);
+        margin-right: var(--size);
   }
 }
 
 #search {
     &.router-link-exact-active {
         background-color: var(--search);
-        border-radius: var(--rounded);
-        border: var(--active);
   }
 }
 
 #config {
     &.router-link-exact-active {
         background-color: var(--config);
-        border-radius: var(--rounded);
-        border: var(--active);
   }
 }
 
-//main y divs
+//DIVS
 .container, .home {
-    display: block;
     background-color: var(--send);
     height: var(--window);
 }
@@ -114,7 +99,6 @@ a {
 
 .column3 {
     margin-top: -20px;
-    margin-left: 15px;
 }
 
 .column4 {
@@ -128,7 +112,7 @@ a {
 
 .column6 {
     margin-left: 170px;
-    margin-top: 165px;
+    margin-top: 160px;
 }
 
 .delete {
@@ -147,32 +131,29 @@ a {
     height: var(--window);
 }
 
-.bottom {
-    margin-bottom: 250px;
-}
-
-.columnButtons {
-    margin-left: 215px;
-    margin-top: 40px;
-}
 
 .config {
     background-color: var(--config);
     height: 90vh;
 }
 
-//interaccion
+.columnButtons {
+    margin-left: 200px;
+    margin-top: 35px;
+}
+
+//INTERACTION
 input, select {
     margin-left: var(--size);
 }
 
 .button, .reset {
-    margin: 15px;
+    margin: var(--size);
     padding: 10px;
-    background-color: #eeecf4;  
-    color: #000000; 
+    background-color: #e9e7ee;  
+    color: #000; 
     font-size: 15px;
-    border-radius: 10px; 
+    border-radius: var(--rounded); 
     cursor: pointer;
     font-weight: bold;
     }
@@ -190,58 +171,45 @@ input[type=number], input[type=text], input[type=file], input[type=date] {
    margin-bottom: 20px;
 }
 
-// dropdown
-
-/* Dropdown Button */
+//DROPDOWN
 .dropbtn {
-    padding: 15px;
-    font-size: larger;
-    background-color: var(--search);
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    border-radius: 15px;
-    border: solid #8da590 3px;
-  }
+    color: var(--font);
+    padding: 20px;
+    font-size: 15px;
+    border-radius: var(--rounded);
+    margin-right: 10px;
+}
   
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
+.dropdown {
+    text-align: center;
     display: inline-block;
-  }
+}
   
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--search);
-    min-width: 15px;
-    z-index: 1;
+    background-color: #000;
     font-size: larger;
-    border-radius: 15px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: #ffffff;
+}
+
+.dropdown-content a {
+    color: var(--font);
     padding: 15px;
     text-decoration: none;
     display: block;
-    border: solid #fff 3px;
-    border-radius: 15px;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #6e6e6e;
-    border: solid #622929 3px;
 }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-      color: #000;
-    }
+
+.dropdown-content a:hover {
+    background-color: var(--font);
+    border: solid #fff 3px;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #000;
+    background-color: var(--font);
+}
