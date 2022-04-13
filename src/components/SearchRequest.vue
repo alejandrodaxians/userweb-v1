@@ -4,7 +4,7 @@
   <form form @submit.prevent="onSearchdata">
     <div class="column">
       <h4>Parameters:</h4>
-      <input type="radio" id="complete" value="complete" name="complete" v-model="searchData.complete" required>
+      <input type="checkbox" id="complete" value="complete" name="complete" v-model="searchData.complete">
       <label for="complete">complete</label>
       <br>
       <br>

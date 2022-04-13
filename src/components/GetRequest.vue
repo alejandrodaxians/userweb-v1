@@ -7,16 +7,12 @@
       <label for="request">request_id</label>
       <br>
       <input id="request" type="number" v-model="getData.request_id" placeholder="3333" required/>
-      <p class="complete">complete</p>
-      <input type="radio" id="true" value="true" name="complete" v-model="getData.complete">
-      <label for="true"> True</label>
-      <input type="radio" id="false" value="false" name="complete" v-model="getData.complete">
-      <label for="true"> False</label>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="radioButtons">
+      <br>
+      <br>
+      <input type="checkbox" id="complete-id" value="complete-id" name="complete-id" v-model="getData.complete">
+      <label for="complete-id">complete</label>
+      <br>
+      <br>
       <button class="reset" type="reset">RESET</button>
       <br>
       <button @click="getPost" class="button" type="submit">SEARCH</button>
