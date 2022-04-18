@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <div class="dropdown">
+   <div class="dropdown">
       <p class="dropbtn" id= "search" to="/none">SEARCH</p>
       <div class="dropdown-content">
         <router-link id= "get" to="/">FILTERS</router-link>
@@ -19,7 +19,6 @@
 </style>
 
 <script>
-
 export default {
   name: 'App',
   data () {
