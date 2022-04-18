@@ -111,8 +111,8 @@ a {
 }
 
 .column6 {
-    margin-left: 170px;
-    margin-top: 160px;
+    margin-top: 265px;
+    position: absolute;
 }
 
 .delete {
@@ -164,7 +164,6 @@ input, select {
 input[type=checkbox] {
     transform: scale(1.5);
     position: relative;
-    left: 5px;
 }
 
 input[type=number], input[type=text], input[type=file], input[type=date] {
@@ -212,4 +211,27 @@ input[type=number], input[type=text], input[type=file], input[type=date] {
 .dropdown:hover .dropbtn {
     color: #000;
     background-color: var(--font);
+}
+
+.fieldset {
+    margin-top: -20px;
+    margin-left: var(--size);
+    float: left;
+    display: table;
+}
+
+.fieldset p,
+.fieldset h4 {
+    display: table-row;
+}
+
+.fieldset input, 
+.fieldset select, 
+.fieldset label {
+    display: table-cell;
+    margin: 3px;
+}
+
+#field {
+    margin-left: -15px;
 }
