@@ -1,7 +1,7 @@
 <template>
 <h4 class="title">{{ msg }}</h4>
   <div class="getOne">
-    <form form @submit.prevent="onSubmit">
+    <form form @submit.prevent="getRequest">
     <div class="column">
       <h4>Parameters:</h4>
       <label for="request">request_id</label>
@@ -15,14 +15,13 @@
       <br>
       <button class="reset" type="reset">RESET</button>
       <br>
-      <button @click="getPost" class="button" type="submit">SEARCH</button>
+      <button @click="getRequest()" class="button" type="submit">SEARCH</button>
     </div>
     </form>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
 export default {
   name: 'GetOne',
   props: {
@@ -37,16 +36,6 @@ export default {
     }
   },
   methods: {
-    getRequest () {
-      axios.get('')
-        .then((response) => {
-          console.log(response.data)
-          // cuerpo
-        })
-        .catch((error) => {
-          console.log(error)
-        })
-    }
   }
 }
 </script>

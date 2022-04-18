@@ -1,7 +1,7 @@
 <template>
-  <h4 class="title">{{ msg }}</h4>
-  <div class="container">
-  <form @submit="prevent.sendRequest">
+<h4 class="title">{{ msg }}</h4>
+<div class="container">
+  <form @submit="prevent.create">
     <div class="column">
       <h4>Parameters:</h4>
       <label for="temp">template_id</label>
@@ -49,16 +49,15 @@
       <br>
       <button class="reset" type="reset">RESET</button>
       <br/>
-      <button @click="sendRequest" class="button" type="submit">EXECUTE</button>
+      <button @click="create()" class="button" type="submit">EXECUTE</button>
     </div>
    </form>
-   </div>
+</div>
 </template>
 
 <script>
-import axios from 'axios'
 export default {
-  name: 'HomePage',
+  name: 'CreateReq',
   props: {
     msg: String
   },
@@ -78,11 +77,6 @@ export default {
     }
   },
   methods: {
-    sendRequest () {
-      axios.post('', this.sendData)
-        .then(response => console.log(response))
-        .catch(error => console.log(error))
-    }
   }
 }
 </script>

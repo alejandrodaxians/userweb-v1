@@ -1,6 +1,6 @@
 <template>
 <h4 class="title">{{ msg }}</h4>
-  <form form @submit.prevent="onSubmit">
+  <form form @submit.prevent="DeleteRequest">
     <div class="delete">
       <div class="column">
         <h4>Parameters:</h4>
@@ -21,7 +21,7 @@
       <div class="columnButtons">
         <button class="button" type="reset">RESET</button>
         <br/>
-        <button class="button" type="submit">DELETE</button>
+        <button @clik="deleteRequest()" class="button" type="submit">DELETE</button>
       </div>
     </div>
   </form>

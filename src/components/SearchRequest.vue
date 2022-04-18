@@ -1,7 +1,7 @@
 <template>
   <h4 class="title">{{ msg }}</h4>
   <div class="search">
-  <form form @submit.prevent="onSearchdata">
+  <form form @submit.prevent="search">
     <div class="column">
       <h4>Parameters:</h4>
       <input type="checkbox" id="complete" value="complete" name="complete" v-model="searchData.complete">
@@ -44,14 +44,13 @@
     <div class="column6">
       <button class="reset" type="reset">RESET</button>
       <br/>
-      <button @click="searchAll" class="button" type="submit">SEARCH</button>
+      <button @click="search()" class="button" type="submit">SEARCH</button>
     </div>
   </form>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
 export default {
   name: 'SearchAll',
   props: {
@@ -69,16 +68,6 @@ export default {
     }
   },
   methods: {
-    searchAll () {
-      axios.get('')
-        .then((response) => {
-          console.log(response.data)
-          response.data = this.searchData
-        })
-        .catch((error) => {
-          console.log(error)
-        })
-    }
   }
 }
 </script>
