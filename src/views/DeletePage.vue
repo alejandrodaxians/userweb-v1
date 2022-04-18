@@ -6,13 +6,29 @@
 </template>
 
 <script>
-// @ is an alias to /src
+import axios from 'axios'
 import DeleteRequest from '@/components/DeleteRequest.vue'
 
 export default {
   name: 'HomeView',
   components: {
     DeleteRequest
+  },
+  data () {
+    return {
+      deleteData: []
+    }
+  },
+  methods: {
+    deleteRequest () {
+      axios.delete('')
+        .then(function (response) {
+          console.log(response)
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    }
   }
 }
 </script>

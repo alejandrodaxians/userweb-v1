@@ -28,7 +28,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 export default {
   name: 'DeleteRequest',
   props: {
@@ -41,17 +40,6 @@ export default {
         vnfd_id: '',
         ucpe_id: ''
       }
-    }
-  },
-  methods: {
-    deleteRequest () {
-      axios.delete('')
-        .then(function (response) {
-          console.log(response)
-        })
-        .catch(function (error) {
-          console.log(error)
-        })
     }
   }
 }
