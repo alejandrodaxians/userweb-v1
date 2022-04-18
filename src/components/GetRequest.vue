@@ -9,8 +9,9 @@
       <input id="request" type="number" v-model="getData.request_id" placeholder="3333" required/>
       <br>
       <br>
-      <input type="checkbox" id="complete-id" value="complete-id" name="complete-id" v-model="getData.complete">
       <label for="complete-id">complete</label>
+      <input type="checkbox" id="complete-id" value="complete-id" name="complete-id" v-model="getData.complete">
+      <br>
       <br>
       <br>
       <button class="reset" type="reset">RESET</button>
